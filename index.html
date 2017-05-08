@@ -10,50 +10,77 @@
   </head>
   <body>
     <div class="container">
+      <h1>My favorite flowers</h1>
       <form id="add_flower">
-        <label for="flower_name">Name of Flower</label>
-        <input type="text" id="flower_name" class="form-control">
+        <select class="form-control" id="flower_name">
+          <option value="rose">Rose</option>
+          <option value="sunflower">Sunflower</option>
+          <option value="tulip">tulip</option>
+          <option value="african-violet">African Violet</option>
+          <option value="hibiscus">Hibiscus</option>
+          <option value="oxalis">Oxalis</option>
+        </select>
 
         <label for="flower_price">Price of Flower</label>
         <input type="text" id="flower_price" class="form-control">
 
+        <label for="flower_color">Color of Flower</label>
+        <input type="text" id="flower_color" class="form-control">
+
         <div class="radio">
           <label>
-            <input type="radio" name="flowerOption" accept=""id="indoor" value="indoor"checked>
-            Indoor Flowers
+            <input type="radio" name="flower_type" id="indoor" value="indoor" checked>
+            Indoor
           </label>
         </div>
         <div class="radio">
           <label>
-            <input type="radio" name="flowerOption" id="outdoor" value="outdoor">
-            Outdoor Flowers
+            <input type="radio" name="flower_type" id="outdoor" value="outdoor" checked>
+          Outdoor
           </label>
         </div>
 
-        <div class="form-group">
-          <label for="flower_picture">Photo</label>
-          <input type="file" id="flower_picture">
-        </div>
         <button type="submit" class="btn btn-success">Add Flower</button>
       </form>
 
       <div class="row">
-        <ul class="nav nav-stacked col-md-2">
+        <div id="flower1">
+          <p id = "flower_info">
+
+          </p>
+        </div>
+        <!-- <ul class="nav nav-stacked col-md-2">
           <li role="presentation" class="active"><a href="#">All flowers</a></li>
           <li role="presentation"><a href="#">Indoor</a></li>
           <li role="presentation"><a href="#">Outdoor</a></li>
-        </ul>
-        <div class="col-md-10">
-          <div class="col-md-4">
+        </ul> -->
+        <!-- <div class="col-md-10">
+          <div id="col1" class="col-md-4">
             <h1>asd</h1>
+            <div id="flower1">
+              <img src="img/hibiscus.jpg" id="photo1"/>
+              <span id="hibiscus"></span>
+            </div>
+            <div id="flower2">
+              <img src="img/african-violet.jpg" id="photo2"/>
+              <span id= "african-violet"></span>
+            </div>
           </div>
           <div class="col-md-4">
             <h1>asd</h1>
+            <img id = "rose" src="img/rose.jpg" id="photo3"/>
+            <span id="rose"></span>
+            <img id = "oxalis" src="img/oxalis.jpg" id="photo4"/>
+            <span id="oxalis"></span>
           </div>
           <div class="col-md-4">
             <h1>asd</h1>
+            <img src="img/sunflower.jpg" id="photo5">
+            <span id="sunflower"></span>
+            <img src="img/tulip.jpg" id="photo6">
+            <span id="tulip"></span>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </body>
